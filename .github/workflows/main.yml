@@ -1,7 +1,12 @@
 name: learn-github-actions
-on: push
+
+on:
   schedule:
-    - cron: '01 20 * * 1-5'
+  - cron: "30 3 * * *"
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 jobs:
   test:
     runs-on: ubuntu-latest
