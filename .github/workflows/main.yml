@@ -2,7 +2,7 @@ name: learn-github-actions
 
 on:
   schedule:
-  - cron: "*/2 * * * *"
+  - cron: "* * * * *"
   push:
     branches: [ "master" ]
   pull_request:
