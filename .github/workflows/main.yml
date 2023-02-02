@@ -2,8 +2,11 @@ name: learn-github-actions
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
     
+permissions:
+  contents: read
+  
 jobs:
   test:
     runs-on: ubuntu-latest
