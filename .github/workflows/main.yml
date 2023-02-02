@@ -1,7 +1,11 @@
 name: learn-github-actions
 
 on:
+  schedule:
+  - cron: "3 * * * *"
   push:
+    branches: [ "master" ]
+  pull_request:
     branches: [ "master" ]
     
 permissions:
